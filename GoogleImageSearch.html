@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+		<link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+		<p>Date/Time: <span id="datetime"></span></p>
+
+		<script>
+		var dt = new Date();
+		document.getElementById("datetime").innerHTML = dt.toLocaleString();
+		</script>
+        
+		<p align="right"><a href="index.html">Google Search</a></p>
+		
+		<form action="https://google.com/search">
+			<input type="hidden" name="tbm" value="isch"/>
+            <p align="center"><input class="inputbox" type="text" name="q" autofocus></p>
+            <p align="center"><input class="button" type="submit" value="Google Search"></p>
+        </form>
+    </body>
+</html>
